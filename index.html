@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>مولِّد البرومبتات العربيَّة والإسلاميَّة للتَّهاني الفاخرة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@500;600;700&family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg1: #f8f7ef;
+        --bg2: #eef4ea;
+        --card: rgba(255, 255, 255, 0.92);
+        --line: #dce6d9;
+        --text: #21352c;
+        --muted: #5d7267;
+        --gold: #b99335;
+        --gold2: #d7b35c;
+        --green: #14532d;
+        --green2: #2b7d4a;
+        --soft: #f7fbf4;
+        --shadow: 0 16px 42px rgba(36, 61, 50, 0.11);
+        --radius: 24px;
+        --danger: #b42318;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Tajawal", system-ui, sans-serif;
+        color: var(--text);
+        min-height: 100vh;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(188, 163, 91, 0.16) 0,
+            transparent 18%
+          ),
+          radial-gradient(
+            circle at top left,
+            rgba(32, 120, 65, 0.1) 0,
+            transparent 19%
+          ),
+          linear-gradient(180deg, var(--bg1), var(--bg2));
+      }
+      .wrap {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 28px 18px 42px;
+      }
+      .hero {
+        background: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        box-shadow: var(--shadow);
+        border-radius: 30px;
+        padding: 26px 24px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .hero h1 {
+        margin: 0 0 8px;
+        font-family: "Marhey", sans-serif;
+        font-size: clamp(25px, 3vw, 42px);
+        line-height: 1.3;
+        color: #183726;
+      }
+      .hero p {
+        margin: 0 auto;
+        max-width: 1080px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.95;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: minmax(330px, 1.05fr) minmax(330px, 0.95fr);
+        gap: 20px;
+      }
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      .panel h2 {
+        margin: 0 0 16px;
+        font-size: 24px;
+      }
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 18px 0 12px;
+        font-size: 16px;
+        font-weight: 800;
+      }
+      .section-title::before {
+        content: "";
+        width: 11px;
+        height: 11px;
+        border-radius: 999px;
+        flex: 0 0 auto;
+        background: linear-gradient(135deg, var(--gold), var(--green2));
+      }
+      .fields,
+      .thirds {
+        display: grid;
+        gap: 14px;
+      }
+      .fields {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .thirds {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .full {
+        grid-column: 1 / -1;
+      }
+      label {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 14px;
+        font-weight: 800;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        border: 1px solid #ced9cc;
+        background: #fbfdf9;
+        color: var(--text);
+        border-radius: 14px;
+        padding: 12px 13px;
+        font-size: 15px;
+        font-family: inherit;
+        outline: none;
+        transition: 0.18s ease;
+      }
+      textarea {
+        resize: vertical;
+        line-height: 1.85;
+        min-height: 220px;
+        white-space: pre-wrap;
+      }
+      input:focus,
+      select:focus,
+      textarea:focus {
+        border-color: #9bb69d;
+        background: #fff;
+        box-shadow: 0 0 0 4px rgba(43, 125, 74, 0.09);
+      }
+      .toolbar,
+      .sub-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+      button,
+      .link-btn {
+        border: none;
+        border-radius: 14px;
+        padding: 12px 16px;
+        font-size: 15px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.18s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button:hover,
+      .link-btn:hover {
+        transform: translateY(-1px);
+      }
+      .primary {
+        background: linear-gradient(135deg, var(--gold), var(--gold2));
+        color: #fff;
+        box-shadow: 0 8px 18px rgba(185, 147, 53, 0.25);
+      }
+      .secondary {
+        background: #eef7f1;
+        color: var(--green);
+        border: 1px solid #cfe5d4;
+      }
+      .ghost {
+        background: #f7faf6;
+        color: #456254;
+        border: 1px solid #dbe6dd;
+      }
+      .danger {
+        background: #fff4f3;
+        color: var(--danger);
+        border: 1px solid #f3c6c3;
+      }
+      .link-btn {
+        background: #edf4ff;
+        color: #265b99;
+        border: 1px solid #cfdbf0;
+      }
+      .hint {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.85;
+      }
+      .status {
+        margin-top: 12px;
+        font-size: 13px;
+        font-weight: 800;
+        color: #0d6b47;
+        min-height: 20px;
+      }
+      .status.error {
+        color: var(--danger);
+        background: #fff3f2;
+        border: 1px solid #f0c6c3;
+        padding: 10px 12px;
+        border-radius: 12px;
+      }
+      .summary,
+      .note-card {
+        border-radius: 18px;
+        padding: 16px;
+        line-height: 1.95;
+        font-size: 14px;
+      }
+      .summary {
+        background: linear-gradient(180deg, #fbfdf8, #f4f8f0);
+        border: 1px solid var(--line);
+        color: #456054;
+      }
+      .summary b {
+        color: #1c3a2a;
+      }
+      .note-card {
+        background: linear-gradient(180deg, #fffdf7, #f7fbf4);
+        border: 1px dashed #cfdbcd;
+        color: #52695e;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .chip {
+        background: #fff;
+        border: 1px solid #d8e3d7;
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 12px;
+        color: #4f6558;
+      }
+      .lock-card {
+        border: 1px solid #dce7da;
+        background: linear-gradient(180deg, #fcfdf9, #f6faf3);
+        border-radius: 18px;
+        padding: 14px 16px;
+        color: #53695d;
+        line-height: 1.9;
+        font-size: 13px;
+      }
+      footer {
+        margin-top: 24px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        line-height: 1.8;
+      }
+
+      footer a {
+        text-decoration: none;
+      }
+      .gold-link {
+        color: var(--gold);
+        font-weight: 800;
+      }
+      @media (max-width: 1100px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .fields,
+        .thirds {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hero">
+        <h1>مولِّد البرومبتات العربيَّة والإسلاميَّة للتَّهاني الفاخرة</h1>
+        <p>
+          هذه نسخة عامة مطوَّرة من المولد الناجح، تحفظ الهيكل الفني نفسه:
+          عبارتان رئيسيتان، تذييل، وعنصر سفلي فاخر يتحدد
+          <b>تلقائيًا حسب الدولة</b>، ثم اسم مخطوط أسفله. إذا كانت الدولة
+          <b>المملكة العربية السعودية</b> يظهر <b>سيف ذهبي أفقي</b>، وإذا كانت
+          أي دولة أخرى يظهر <b>خط ذهبي أفقي رفيع</b>، مع إمكانية إضافة
+          <b>جزء من علم الدولة كعلامة مائية مرفرفة</b> داخل الخلفية فقط، من دون
+          أي API أو رفع شعارات خاصة.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="panel">
+          <h2>إعدادات المولد</h2>
+
+          <div class="section-title">النصوص الرئيسية</div>
+          <div class="fields">
+            <div>
+              <label for="mainLine1">العبارة الرئيسية الأولى</label>
+              <input id="mainLine1" value="عِيدُكُم مُبارَك" />
+            </div>
+            <div>
+              <label for="mainLine2">العبارة الرئيسية الثانية</label>
+              <input id="mainLine2" value="تَقَبَّلَ اللهُ مِنَّا وَمِنْكُم" />
+            </div>
+          </div>
+
+          <div class="section-title">التذييل والاسم</div>
+          <div class="fields">
+            <div>
+              <label for="footerLine1">السطر التذييلي الأول</label>
+              <input
+                id="footerLine1"
+                value="حَفِظَ اللهُ المَمْلَكَةَ العَرَبِيَّةَ السُّعُودِيَّةَ"
+              />
+            </div>
+            <div>
+              <label for="footerLine2">السطر التذييلي الثاني</label>
+              <input
+                id="footerLine2"
+                value="كُلُّنَا لِلْوَطَنِ سَنَدٌ، وَسِلَاحٌ وَمَدَدٌ، وَلِلَّهِ هَذَا عَهْدٌ."
+              />
+            </div>
+            <div class="full">
+              <label for="personName">الاسم أسفل العنصر السفلي</label>
+              <input
+                id="personName"
+                value="مُحَمَّدُ بْنُ عَبْدِاللهِ الفَيْفِي"
+              />
+            </div>
+          </div>
+
+          <div class="section-title">الهوية الوطنية</div>
+          <div class="fields">
+            <div>
+              <label for="country">الدولة المختارة للعلم المائي</label>
+              <select id="country"></select>
+            </div>
+            <div>
+              <label for="nationalTone">الطابع الوطني</label>
+              <select id="nationalTone">
+                <option value="auto" selected>تلقائي حسب الدولة</option>
+                <option value="saudi">سعودي واضح</option>
+                <option value="general">عربي / إسلامي عام</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="section-title">خيارات بسيطة</div>
+          <div class="thirds">
+            <div>
+              <label for="canvas">المقاس</label>
+              <select id="canvas">
+                <option value="1024" selected>1024 × 1024</option>
+                <option value="512">512 × 512</option>
+              </select>
+            </div>
+            <div>
+              <label for="theme">مزج الألوان</label>
+              <select id="theme">
+                <option value="exact" selected>مطابق تمامًا</option>
+                <option value="goldDominant">ذهبي أوضح</option>
+                <option value="softColor">لون وطني أنعم</option>
+              </select>
+            </div>
+            <div>
+              <label for="backgroundMode">الخلفية</label>
+              <select id="backgroundMode">
+                <option value="exact" selected>مطابقة للأصل</option>
+                <option value="softer">أنعم قليلًا</option>
+                <option value="richer">أفخم قليلًا</option>
+                <option value="flagWatermark">علم مائي مرفرف</option>
+                <option value="flagWatermarkRich">علم مائي أوضح قليلًا</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="section-title">ثبات البرومبت</div>
+          <div class="lock-card">
+            هذه النسخة لا تعتمد على API ولا على رفع الصور. تم حذف خيار الشعارات
+            الخاصة لتبقى العملية سهلة ومستقرة. تختار الدولة فقط، فيولّد الموقع
+            وصفًا نصيًا لجزء من علمها كعلامة مائية مرفرفة داخل الخلفية، ويحدد
+            العنصر السفلي تلقائيًا: <b>السعودية = سيف ذهبي أفقي</b>، و<b
+              >غيرها = خط ذهبي أفقي رفيع</b
+            >.
+          </div>
+
+          <div class="section-title">أزرار التنفيذ</div>
+          <div class="toolbar">
+            <button class="primary" type="button" onclick="generateAll()">
+              توليد البرومبت
+            </button>
+            <button
+              class="secondary"
+              type="button"
+              onclick="copyText('combined', this)"
+            >
+              نسخ الكل
+            </button>
+            <button
+              class="ghost"
+              type="button"
+              onclick="copyText('prompt', this)"
+            >
+              نسخ البرومبت
+            </button>
+            <button
+              class="ghost"
+              type="button"
+              onclick="copyText('negative', this)"
+            >
+              نسخ Negative
+            </button>
+            <button class="ghost" type="button" onclick="downloadText()">
+              تنزيل TXT
+            </button>
+            <a
+              class="link-btn"
+              href="https://gemini.google/ye/overview/image-generation/?hl=ar-YE"
+              target="_blank"
+              rel="noopener noreferrer"
+              >افتح نانو بانانا</a
+            >
+            <button class="secondary" type="button" onclick="copyAndOpen(this)">
+              انسخ وافتح نانو بانانا
+            </button>
+            <button class="danger" type="button" onclick="resetForm()">
+              إعادة تعيين
+            </button>
+          </div>
+          <div class="sub-toolbar">
+            <button
+              class="secondary"
+              type="button"
+              onclick="saveSettings(this)"
+            >
+              حفظ الإعدادات
+            </button>
+            <button class="ghost" type="button" onclick="loadSavedSettings()">
+              استعادة المحفوظ
+            </button>
+            <button class="danger" type="button" onclick="clearSavedSettings()">
+              حذف المحفوظ
+            </button>
+          </div>
+          <div class="hint">
+            زر "انسخ وافتح نانو بانانا" ينسخ البرومبت الكامل أولًا، ثم يفتح
+            الصفحة في تبويب جديد. خيار العلم المائي يضيف
+            <b>جزءًا من علم الدولة المختارة فقط</b> كطبقة حريرية خافتة جدًا في
+            الخلفية.
+          </div>
+          <div id="status" class="status"></div>
+        </div>
+
+        <div class="panel">
+          <h2>المخرجات</h2>
+
+          <div class="section-title">ملخص سريع</div>
+          <div id="summaryBox" class="summary"></div>
+
+          <div class="section-title">البرومبت الأساسي</div>
+          <textarea id="promptOutput" spellcheck="false"></textarea>
+
+          <div class="section-title">Negative Constraints</div>
+          <textarea id="negativeOutput" spellcheck="false"></textarea>
+
+          <div class="section-title">ملاحظات عملية</div>
+          <div class="note-card">
+            ابدأ بخيار <b>مطابق تمامًا</b>. إذا أردت إضافة هوية وطنية أوضح، فعّل
+            <b>علم مائي مرفرف</b> أو <b>علم مائي أوضح قليلًا</b>. السعودية هي
+            الافتراضية، لكنك تستطيع اختيار دولة عربية أو إسلامية أخرى من
+            القائمة.
+            <div class="chips">
+              <span class="chip">النصوص المسموحة فقط: 5 نصوص</span>
+              <span class="chip">سيف أفقي واحد فقط</span>
+              <span class="chip">اسم واحد أسفل السيف</span>
+              <span class="chip">علم مائي جزئي فقط</span>
+              <span class="chip">لا رفع شعارات ولا API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div style="margin-bottom: 10px">
+          <a
+            class="muted-link"
+            href="https://chatgpt.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            تمت البرمجة والتطوير لخدمة المحتوى العربي والإسلامي باستخدام ChatGPT
+          </a>
+        </div>
+
+        <div style="margin-bottom: 10px">
+          <a
+            href="https://t.me/Insan_Notebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Insan_Notebook | كشكول_إنسان
+          </a>
+        </div>
+
+        <div>جاهز للاستخدام مع Nano Banana 2 دون تعقيد إضافي</div>
+      </footer>
+    </div>
+    <script>
+      const STORAGE_KEY = "eid-arabic-islamic-prompt-generator-v1";
+
+      const COUNTRIES = [
+        "المملكة العربية السعودية",
+        "الإمارات العربية المتحدة",
+        "دولة الكويت",
+        "مملكة البحرين",
+        "دولة قطر",
+        "سلطنة عُمان",
+        "الجمهورية اليمنية",
+        "جمهورية مصر العربية",
+        "المملكة الأردنية الهاشمية",
+        "دولة فلسطين",
+        "الجمهورية اللبنانية",
+        "الجمهورية العربية السورية",
+        "جمهورية العراق",
+        "المملكة المغربية",
+        "الجمهورية الجزائرية الديمقراطية الشعبية",
+        "الجمهورية التونسية",
+        "دولة ليبيا",
+        "جمهورية السودان",
+        "الجمهورية الإسلامية الموريتانية",
+        "جمهورية جيبوتي",
+        "جمهورية الصومال الفيدرالية",
+        "اتحاد جزر القمر",
+        "الجمهورية التركية",
+        "جمهورية باكستان الإسلامية",
+        "جمهورية إندونيسيا",
+        "ماليزيا",
+        "سلطنة بروناي دار السلام",
+      ];
+
+      const DEFAULTS = {
+        mainLine1: "عِيدُكُم مُبارَك",
+        mainLine2: "تَقَبَّلَ اللهُ مِنَّا وَمِنْكُم",
+        footerLine1: "حَفِظَ اللهُ المَمْلَكَةَ العَرَبِيَّةَ السُّعُودِيَّةَ",
+        footerLine2:
+          "كُلُّنَا لِلْوَطَنِ سَنَدٌ، وَسِلَاحٌ وَمَدَدٌ، وَلِلَّهِ هَذَا عَهْدٌ.",
+        personName: "مُحَمَّدُ بْنُ عَبْدِاللهِ الفَيْفِي",
+        country: "المملكة العربية السعودية",
+        nationalTone: "auto",
+        canvas: "1024",
+        theme: "exact",
+        backgroundMode: "exact",
+      };
+
+      const IDS = Object.keys(DEFAULTS);
+
+      function byId(id) {
+        return document.getElementById(id);
+      }
+      function valueOf(id) {
+        return byId(id).value.trim();
+      }
+
+      function populateCountries() {
+        const sel = byId("country");
+        sel.innerHTML = COUNTRIES.map(
+          (name) =>
+            `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`,
+        ).join("");
+      }
+
+      function setStatus(message, isError = false) {
+        const el = byId("status");
+        el.textContent = message;
+        el.className = isError ? "status error" : "status";
+      }
+
+      function validateFields() {
+        const required = [
+          "mainLine1",
+          "mainLine2",
+          "footerLine1",
+          "footerLine2",
+          "personName",
+        ];
+        const missing = required.some((id) => !valueOf(id));
+        if (missing) {
+          setStatus("يرجى تعبئة جميع الحقول النصية قبل التوليد.", true);
+          return false;
+        }
+        return true;
+      }
+
+      function escapeQuotes(text) {
+        return String(text).replaceAll('"', "”");
+      }
+
+      function escapeHtml(text) {
+        return String(text)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+      }
+
+      function applyConfig(cfg = {}) {
+        IDS.forEach((id) => {
+          if (cfg[id] !== undefined && byId(id)) {
+            byId(id).value = cfg[id];
+          }
+        });
+      }
+
+      function getConfig() {
+        return {
+          mainLine1: valueOf("mainLine1"),
+          mainLine2: valueOf("mainLine2"),
+          footerLine1: valueOf("footerLine1"),
+          footerLine2: valueOf("footerLine2"),
+          personName: valueOf("personName"),
+          country: byId("country").value,
+          nationalTone: byId("nationalTone").value,
+          canvas: byId("canvas").value,
+          theme: byId("theme").value,
+          backgroundMode: byId("backgroundMode").value,
+        };
+      }
+
+      function getCanvasLine(cfg) {
+        return cfg.canvas === "512"
+          ? "- المقاس: 512×512"
+          : "- المقاس: 1024×1024";
+      }
+
+      function isSaudi(country) {
+        return country === "المملكة العربية السعودية";
+      }
+
+      function getToneLine(cfg) {
+        if (cfg.nationalTone === "saudi")
+          return "- الطابع: سعودي راقٍ، هادئ، نظيف، متوازن، متمركز";
+        if (cfg.nationalTone === "general")
+          return `- الطابع: عربي / إسلامي راقٍ، هادئ، نظيف، متوازن، متمركز، مع حضور بصري يوحي بهوية ${cfg.country}`;
+        return isSaudi(cfg.country)
+          ? "- الطابع: سعودي راقٍ، هادئ، نظيف، متوازن، متمركز"
+          : `- الطابع: عربي / إسلامي راقٍ، هادئ، نظيف، متوازن، متمركز، مع حضور بصري يوحي بهوية ${cfg.country}`;
+      }
+
+      function getThemeLines(cfg) {
+        const saudi = isSaudi(cfg.country) || cfg.nationalTone === "saudi";
+        const accent = saudi
+          ? "الأخضر السعودي الداكن"
+          : `لون وطني داكن مستلهم من علم ${cfg.country}`;
+
+        if (cfg.theme === "goldDominant") {
+          return {
+            colors: `- اجعل لون المخطوطات مزيجاً فاخراً من الذهب المعدني اللامع مع ${accent}، مع حضور ذهبي أوضح قليلاً من النسخة الأصلية`,
+            balance: saudi
+              ? "- الذهبي هو اللون البصري الغالب بوضوح أكبر، والأخضر السعودي يظهر كمزج فاخر وهادئ داخل اللمعة المعدنية أو أطراف الحروف أو بعض التدرج الداخلي"
+              : `- الذهبي هو اللون البصري الغالب بوضوح أكبر، ويظهر اللون الوطني المستلهم من علم ${cfg.country} كمزج فاخر وهادئ داخل اللمعة المعدنية أو أطراف الحروف أو بعض التدرج الداخلي`,
+            avoid:
+              "- لا تجعل النص بلون واحد صريح، بل ذهبياً ممزوجاً باللون الثانوي بشكل راقٍ جداً",
+            name: "- اجعل اسم الشخص أيضاً بنفس المزج الفاخر، مع حضور ذهبي واضح ومتناسق مع بقية التصميم",
+          };
+        }
+
+        if (cfg.theme === "softColor") {
+          return {
+            colors: `- اجعل لون المخطوطات مزيجاً فاخراً من الذهب المعدني اللامع مع ${accent}، مع لون ثانوي أنعم وأهدأ من النسخة الأصلية`,
+            balance: saudi
+              ? "- الذهبي هو اللون البصري الغالب، والأخضر السعودي يظهر كمزج فاخر وهادئ وخفيف داخل اللمعة المعدنية أو أطراف الحروف أو بعض التدرج الداخلي"
+              : `- الذهبي هو اللون البصري الغالب، ويظهر اللون الوطني المستلهم من علم ${cfg.country} كمزج فاخر وهادئ وخفيف داخل اللمعة المعدنية أو أطراف الحروف أو بعض التدرج الداخلي`,
+            avoid:
+              "- لا تجعل النص بلون واحد صريح، بل ذهبياً ممزوجاً باللون الثانوي بشكل راقٍ جداً",
+            name: "- اجعل اسم الشخص أيضاً بنفس المزج الفاخر، مع توازن هادئ ومتناسق مع بقية التصميم",
+          };
+        }
+
+        return {
+          colors: `- اجعل لون المخطوطات مزيجاً فاخراً من الذهب المعدني اللامع مع ${accent}`,
+          balance: saudi
+            ? "- الذهبي هو اللون البصري الغالب، والأخضر السعودي يظهر كمزج فاخر وهادئ داخل اللمعة المعدنية أو أطراف الحروف أو بعض التدرج الداخلي"
+            : `- الذهبي هو اللون البصري الغالب، ويظهر اللون الوطني المستلهم من علم ${cfg.country} كمزج فاخر وهادئ داخل اللمعة المعدنية أو أطراف الحروف أو بعض التدرج الداخلي`,
+          avoid:
+            "- لا تجعل النص بلون واحد صريح، بل ذهبياً ممزوجاً باللون الثانوي بشكل راقٍ جداً",
+          name: "- اجعل اسم الشخص أيضاً بنفس المزج الفاخر بين الذهبي واللون الثانوي، مع حضور ذهبي واضح ومتناسق مع بقية التصميم",
+        };
+      }
+
+      function getBackgroundLines(cfg) {
+        const countryGreen =
+          isSaudi(cfg.country) || cfg.nationalTone === "saudi";
+        const flavor = countryGreen
+          ? "بلمسة خضراء سعودية"
+          : `بلمسة لونية وطنية مستلهمة من علم ${cfg.country}`;
+        const countryFlagName = cfg.country;
+
+        const base = {
+          main: `- الخلفية هادئة جداً وفاخرة، عاجية فاتحة أو ضبابية فاتحة، مع مزج ناعم جداً ${flavor} خفيفة جداً`,
+          sub: "- يمكن أن تحتوي الخلفية على تدرج ناعم جداً بين العاجي الفاتح واللون الباهت الفاخر المناسب للهوية الوطنية",
+          glow: "- أضف هالة إضاءة ناعمة جداً وخفيفة في المنتصف خلف النص",
+          ornaments:
+            "- أضف زخارف هندسية إسلامية خفيفة جداً ومموهة جداً في الخلفية فقط",
+          flag: "",
+        };
+
+        if (cfg.backgroundMode === "softer") {
+          base.main = `- الخلفية هادئة جداً وفاخرة، عاجية فاتحة أو ضبابية فاتحة، مع مزج ناعم جداً ${flavor} أخف وأهدأ قليلاً من الأصل`;
+          return base;
+        }
+        if (cfg.backgroundMode === "richer") {
+          base.main = `- الخلفية هادئة جداً وفاخرة، عاجية فاتحة أو ضبابية فاتحة، مع مزج ناعم جداً ${flavor} أفخم قليلًا من الأصل`;
+          return base;
+        }
+        if (cfg.backgroundMode === "flagWatermark") {
+          base.flag = `- اجعل في الخلفية جزءاً من علم ${countryFlagName} فقط، كعلامة مائية حريرية مرفرفة وخافتة جداً، يظهر بشكل جزئي وغير كامل، ومموه للغاية، ويغطي الخلفية برقة من دون أن يحجب النصوص أو ينافسها بصرياً`;
+          return base;
+        }
+        if (cfg.backgroundMode === "flagWatermarkRich") {
+          base.flag = `- اجعل في الخلفية جزءاً من علم ${countryFlagName} فقط، كعلامة مائية حريرية مرفرفة وأوضح قليلاً من النسخة الخافتة، لكنه يبقى مموهاً وناعماً جداً وغير كامل، ويغطي الخلفية برقي مع بقاء النصوص هي العنصر المهيمن بصرياً`;
+          return base;
+        }
+        return base;
+      }
+
+      function getBottomElementSpec(cfg) {
+        if (isSaudi(cfg.country)) {
+          return {
+            labelText:
+              "ثم أضف تحت السيف مباشرة اسم الشخص التالي حرفياً، في سطر مستقل واحد فقط:",
+            sectionTitle: "تعليمات العنصر السفلي السعودي:",
+            lines: [
+              "- أضف أسفل التذييل مباشرة سيفاً عربياً واحداً فقط، بمنظور جانبي كامل side view، وليس رمزاً عمودياً",
+              "- يجب أن يكون السيف أفقياً تماماً بزاوية 0°، مستقيماً من اليسار إلى اليمين، وغير مائل، وغير رأسي، وغير مرفوع للأعلى",
+              "- اجعل السيف متمركزاً تماماً أسفل التذييل",
+              "- اجعل طول السيف متوسطاً وواضحاً، بحيث يشغل تقريباً 22% إلى 28% من عرض التصميم",
+              "- اجعل النصل رفيعاً وأنيقاً ومستقيماً، والمقبض صغيراً وراقياً، والتفاصيل بسيطة جداً",
+              "- اجعل لون السيف ذهبياً معدنياً فاخراً، منسجماً مع النص",
+              "- يجب أن يكون السيف عنصراً زخرفياً تكميلياً واضحاً، لا صغيراً جداً، ولا على شكل أيقونة",
+              "- اترك مسافة مريحة بين التذييل والسيف",
+              "- اجعل اسم الشخص تحت السيف مباشرة، متمركزاً تماماً، في سطر مستقل واحد فقط",
+              "- اترك مسافة أنيقة ومدروسة بين السيف واسم الشخص",
+              "- اجعل الاسم جزءاً متكاملاً من التكوين العام، لا يبدو منفصلاً أو مضافاً بشكل عشوائي",
+              "- ممنوع رسم السيف بشكل عمودي أو مائل أو صغير جداً أو كرمز مستقل",
+              "- اجعل السطرين التذييليين يحتفظان بلمسة ذهبية خفيفة ممزوجة باللون الثانوي، ليبقى الترابط اللوني مع العنوان الرئيسي",
+              "- قرّب السيف المذهب قليلاً من التذييل مع الحفاظ على المساحة الأنيقة والراحة البصرية",
+              "- اجعل السطرين التذييليين يحافظان على لمعة ذهبية خفيفة وواضحة على الحواف والتدرج الداخلي، مع بقاء اللون الثانوي ممزوجاً بشكل راقٍ، ولا تجعلهما بلون واحد كامل",
+              "- ارفع السيف المذهب قليلاً جداً إلى الأعلى ليقترب من التذييل مع الحفاظ على التوازن والمساحة الأنيقة",
+              "- امنع ظهور أي لمعة زخرفية أو نجمة أو sparkle أو diamond shape في الزوايا أو الأطراف",
+              "- خفف الزخارف الخلفية في الزوايا بنسبة بسيطة إضافية، واجعلها أكثر تمويهاً وأقل ظهوراً",
+              "- اجعل الخط الأفقي الفاصل أوضح قليلاً وبنفس الذهبي الهادئ المتناسق مع السيف",
+              "- يجب أن يكون اسم الشخص مخطوطة عربية فنية فاخرة، رشيقة وواضحة، أصغر من التذييل، ومتمركزاً تماماً تحت السيف، وبنفس الهوية اللونية الذهبية الممزوجة باللون الثانوي، من دون أن يطغى على السيف أو يلامس حافة التصميم",
+            ],
+            summaryName: "سيف ذهبي أفقي",
+          };
+        }
+
+        return {
+          labelText:
+            "ثم أضف تحت الخط الذهبي الفاصل مباشرة اسم الشخص التالي حرفياً، في سطر مستقل واحد فقط:",
+          sectionTitle: "تعليمات العنصر السفلي العام:",
+          lines: [
+            "- أضف أسفل التذييل مباشرة خطاً ذهبياً أفقياً واحداً فقط، رفيعاً، مستقيماً، بسيطاً، غير مزخرف، ومتمركزاً تماماً",
+            "- يجب أن يكون الخط الذهبي أفقياً تماماً بزاوية 0°، نظيفاً، أنيقاً، وغير مزدوج، وغير مائلاً، وغير مزخرف",
+            "- اجعل طول الخط متوسطاً وواضحاً، بحيث يشغل تقريباً 18% إلى 24% من عرض التصميم",
+            "- اجعل سماكة الخط رفيعة وراقية، ويظهر كفاصل بصري فاخر لا كعنصر رئيسي",
+            "- اجعل لون الخط ذهبياً معدنياً هادئاً ومتناسقاً مع النصوص",
+            "- اترك مسافة مريحة بين التذييل والخط الذهبي",
+            "- اجعل اسم الشخص تحت الخط الذهبي مباشرة، متمركزاً تماماً، في سطر مستقل واحد فقط",
+            "- اترك مسافة أنيقة ومدروسة بين الخط الذهبي واسم الشخص",
+            "- اجعل الاسم جزءاً متكاملاً من التكوين العام، لا يبدو منفصلاً أو مضافاً بشكل عشوائي",
+            "- لا تضف سيفاً أو خنجراً أو رمزاً وطنياً خاصاً بهذه الدولة في أسفل التصميم",
+            "- اجعل السطرين التذييليين يحتفظان بلمسة ذهبية خفيفة ممزوجة باللون الثانوي، ليبقى الترابط اللوني مع العنوان الرئيسي",
+            "- قرّب الخط الذهبي قليلاً من التذييل مع الحفاظ على المساحة الأنيقة والراحة البصرية",
+            "- اجعل السطرين التذييليين يحافظان على لمعة ذهبية خفيفة وواضحة على الحواف والتدرج الداخلي، مع بقاء اللون الثانوي ممزوجاً بشكل راقٍ، ولا تجعلهما بلون واحد كامل",
+            "- امنع ظهور أي لمعة زخرفية أو نجمة أو sparkle أو diamond shape في الزوايا أو الأطراف",
+            "- خفف الزخارف الخلفية في الزوايا بنسبة بسيطة إضافية، واجعلها أكثر تمويهاً وأقل ظهوراً",
+            "- اجعل الخط الأفقي الفاصل واضحاً قليلاً وبنفس الذهبي الهادئ المتناسق مع بقية التكوين",
+            "- يجب أن يكون اسم الشخص مخطوطة عربية فنية فاخرة، رشيقة وواضحة، أصغر من التذييل، ومتمركزاً تماماً تحت الخط الذهبي، وبنفس الهوية اللونية الذهبية الممزوجة باللون الثانوي، من دون أن يطغى على الخط أو يلامس حافة التصميم",
+          ],
+          summaryName: "خط ذهبي أفقي رفيع",
+        };
+      }
+
+      function buildPrompt(cfg) {
+        const theme = getThemeLines(cfg);
+        const bg = getBackgroundLines(cfg);
+        const bottom = getBottomElementSpec(cfg);
+
+        return `أنشئ تصميماً مربعاً أنيقاً وفاخراً جداً، بدون إطار أو حدود.
+${getCanvasLine(cfg)}
+- الأسلوب: مخطوطة عربية جرافيكية فنية فاخرة
+${getToneLine(cfg)}
+
+اكتب النصوص العربية التالية حرفياً فقط، كل عبارة في سطر مستقل:
+
+"${escapeQuotes(cfg.mainLine1)}"
+"${escapeQuotes(cfg.mainLine2)}"
+
+ثم أضف في الأسفل سطرين تذييليين، كل سطر في سطر مستقل:
+
+"${escapeQuotes(cfg.footerLine1)}"
+"${escapeQuotes(cfg.footerLine2)}"
+
+${bottom.labelText}
+"${escapeQuotes(cfg.personName)}"
+
+التوجيه الفني:
+- جميع النصوص الخمسة يجب أن تكون مخطوطة عربية جرافيكية فنية واضحة جداً، وليست كتابة عادية أو خطاً مطبوعاً
+- اجعل العبارتين الرئيسيتين أكبر حجماً وأكثر حضوراً
+- اجعل السطرين التذييليين أصغر من العبارتين الرئيسيتين، لكن بنفس الطابع الفني العربي الجرافيكي
+- اجعل اسم الشخص أصغر قليلاً من السطرين التذييليين، لكن بنفس الأسلوب الفني الفاخر، واضحاً جداً، أنيقاً جداً، ومقروءاً
+- ضع بين العبارة الرئيسية الثانية وأول سطر من التذييل خطاً أفقياً واحداً فقط، مستقيماً، بسيطاً، رفيعاً، غير مزخرف
+${theme.colors}
+${theme.balance}
+${theme.avoid}
+${theme.name}
+${bg.main}
+${bg.sub}
+${bg.glow}
+${bg.ornaments}
+${bg.flag}
+- اجعل الزخارف شبه مخفية، لا تنافس النص، ولا تشتت الانتباه
+- التكوين متمركز تماماً، متوازن جداً، فاخر جداً، بسيط جداً
+- وضوح النص العربي أولوية قصوى
+- اتجاه العربية صحيح من اليمين إلى اليسار، واتصال الحروف سليم تماماً
+- حافظ على جميع النصوص داخل مساحة آمنة مريحة
+- اجعل التباين واضحاً جداً، والمسافات مدروسة، ولا يوجد ازدحام
+
+${bottom.sectionTitle}
+${bottom.lines.join("\n")}
+
+شروط صارمة جداً:
+- النصوص الوحيدة المسموح بها داخل الصورة هي النصوص الخمسة المذكورة فقط
+- تظهر النصوص الخمسة مرة واحدة فقط
+- لا تضف أي نص إضافي أو حروف زائدة أو رموز أو أرقام
+- لا أخطاء إملائية
+- لا تشويه في الحروف العربية
+- لا تكرار لأي كلمة أو سطر
+- لا ورد
+- لا زهور
+- لا عناصر نباتية
+- لا أشخاص
+- لا شعارات
+- لا علم مرسوم كامل
+- لا علامة مائية مزعجة أو طاغية`;
+      }
+
+      function buildNegative(cfg) {
+        const base = [
+          "Negative constraints: no sparkle, no star icon, no diamond light, no corner ornament, no extra glow symbol, no extra decorative mark.",
+          "Negative constraints: no full flag, no centered complete flag, no sharp flag overlay over text, no dominant background flag, no extra watermark elements, no uploaded logo, no custom emblem.",
+        ];
+
+        if (isSaudi(cfg.country)) {
+          base.unshift(
+            "Negative constraints: no vertical sword, no diagonal sword, no upward sword, no tiny sword icon, no floating emblem, no extra symbols.",
+          );
+        } else {
+          base.unshift(
+            "Negative constraints: no sword, no dagger, no khanjar, no weapon icon, no vertical separator, no ornate emblem, no extra symbols.",
+          );
+        }
+
+        return base.join("\n");
+      }
+
+      function updateSummary(cfg) {
+        const themeNames = {
+          exact: "مطابق تمامًا",
+          goldDominant: "ذهبي أوضح",
+          softColor: "لون وطني أنعم",
+        };
+        const bgNames = {
+          exact: "مطابقة للأصل",
+          softer: "أنعم قليلًا",
+          richer: "أفخم قليلًا",
+          flagWatermark: "علم مائي مرفرف",
+          flagWatermarkRich: "علم مائي أوضح قليلًا",
+        };
+        const toneNames = {
+          auto: "تلقائي حسب الدولة",
+          saudi: "سعودي واضح",
+          general: "عربي / إسلامي عام",
+        };
+
+        byId("summaryBox").innerHTML = `
+          <div><b>العبارة الأولى:</b> ${escapeHtml(cfg.mainLine1)}</div>
+          <div><b>العبارة الثانية:</b> ${escapeHtml(cfg.mainLine2)}</div>
+          <div><b>التذييل 1:</b> ${escapeHtml(cfg.footerLine1)}</div>
+          <div><b>التذييل 2:</b> ${escapeHtml(cfg.footerLine2)}</div>
+          <div><b>الاسم:</b> ${escapeHtml(cfg.personName)}</div>
+          <div><b>العنصر السفلي:</b> ${isSaudi(cfg.country) ? "سيف ذهبي أفقي" : "خط ذهبي أفقي رفيع"}</div>
+          <div><b>الدولة:</b> ${escapeHtml(cfg.country)}</div>
+          <div><b>الطابع الوطني:</b> ${toneNames[cfg.nationalTone]}</div>
+          <div><b>المقاس:</b> ${cfg.canvas} × ${cfg.canvas}</div>
+          <div><b>مزج الألوان:</b> ${themeNames[cfg.theme]}</div>
+          <div><b>الخلفية:</b> ${bgNames[cfg.backgroundMode]}</div>
+        `;
+      }
+
+      function generateAll() {
+        if (!validateFields()) {
+          byId("promptOutput").value = "";
+          byId("negativeOutput").value = "";
+          return;
+        }
+        const cfg = getConfig();
+        byId("promptOutput").value = buildPrompt(cfg);
+        byId("negativeOutput").value = buildNegative(cfg);
+        updateSummary(cfg);
+        setStatus("تم توليد البرومبت بنجاح.");
+      }
+
+      async function copyText(mode, btn) {
+        if (!validateFields()) return;
+        if (!byId("promptOutput").value.trim()) generateAll();
+
+        const prompt = byId("promptOutput").value.trim();
+        const negative = byId("negativeOutput").value.trim();
+        let text = "";
+        if (mode === "prompt") text = prompt;
+        if (mode === "negative") text = negative;
+        if (mode === "combined") text = `${prompt}\n\n${negative}`;
+
+        try {
+          await navigator.clipboard.writeText(text);
+          if (btn) {
+            const original = btn.textContent;
+            btn.textContent = "تم النسخ ✔";
+            setTimeout(() => (btn.textContent = original), 1800);
+          }
+          setStatus("تم النسخ إلى الحافظة.");
+        } catch (error) {
+          setStatus("تعذر النسخ التلقائي. انسخ يدويًا من مربع النص.", true);
+        }
+      }
+
+      async function copyAndOpen(btn) {
+        if (!validateFields()) return;
+        if (!byId("promptOutput").value.trim()) generateAll();
+        const combined = `${byId("promptOutput").value.trim()}\n\n${byId("negativeOutput").value.trim()}`;
+
+        try {
+          await navigator.clipboard.writeText(combined);
+          const original = btn.textContent;
+          btn.textContent = "تم النسخ والفتح ✔";
+          window.open(
+            "https://gemini.google/ye/overview/image-generation/?hl=ar-YE",
+            "_blank",
+            "noopener",
+          );
+          setTimeout(() => (btn.textContent = original), 1800);
+          setStatus("تم نسخ البرومبت الكامل وفتح نانو بانانا في تبويب جديد.");
+        } catch (error) {
+          window.open(
+            "https://gemini.google/ye/overview/image-generation/?hl=ar-YE",
+            "_blank",
+            "noopener",
+          );
+          setStatus(
+            "تم فتح نانو بانانا، لكن تعذر النسخ التلقائي. انسخ البرومبت يدويًا.",
+            true,
+          );
+        }
+      }
+
+      function downloadText() {
+        if (!validateFields()) return;
+        if (!byId("promptOutput").value.trim()) generateAll();
+        const content = `${byId("promptOutput").value.trim()}\n\n${byId("negativeOutput").value.trim()}`;
+        const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "eid-arabic-islamic-prompt.txt";
+        a.click();
+        URL.revokeObjectURL(a.href);
+        setStatus("تم تنزيل ملف النص.");
+      }
+
+      function saveSettings(btn) {
+        if (!validateFields()) return;
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(getConfig()));
+          if (btn) {
+            const original = btn.textContent;
+            btn.textContent = "تم الحفظ ✔";
+            setTimeout(() => (btn.textContent = original), 1800);
+          }
+          setStatus("تم حفظ الإعدادات في المتصفح.");
+        } catch (error) {
+          setStatus("تعذر حفظ الإعدادات في هذا المتصفح.", true);
+        }
+      }
+
+      function loadSavedSettings(silent = false) {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) {
+            if (!silent) setStatus("لا توجد إعدادات محفوظة بعد.", true);
+            return false;
+          }
+          const saved = JSON.parse(raw);
+          applyConfig({ ...DEFAULTS, ...saved });
+          generateAll();
+          if (!silent) setStatus("تمت استعادة الإعدادات المحفوظة.");
+          return true;
+        } catch (error) {
+          if (!silent) setStatus("حدثت مشكلة أثناء استعادة المحفوظ.", true);
+          return false;
+        }
+      }
+
+      function clearSavedSettings() {
+        try {
+          localStorage.removeItem(STORAGE_KEY);
+          setStatus("تم حذف المحفوظ من هذا المتصفح.");
+        } catch (error) {
+          setStatus("تعذر حذف المحفوظ.", true);
+        }
+      }
+
+      function resetForm() {
+        applyConfig(DEFAULTS);
+        generateAll();
+        setStatus("تمت إعادة التعيين إلى القيم الافتراضية.");
+      }
+
+      populateCountries();
+      document.querySelectorAll("input, select").forEach((element) => {
+        element.addEventListener("input", generateAll);
+        element.addEventListener("change", generateAll);
+      });
+
+      if (!loadSavedSettings(true)) {
+        applyConfig(DEFAULTS);
+        generateAll();
+      } else {
+        setStatus("تمت استعادة آخر الإعدادات المحفوظة.");
+      }
+    </script>
+  </body>
+</html>
